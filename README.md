@@ -2,9 +2,9 @@
 ZH Late Chunking
 </h1>
 
-<p align="center">
-[English](README_en.md)
-</p>
+<div align="center">
+  <a href="README.md">Chinese</a> | <a href="README_en.md">English</a>
+</div>
 
 ### 简介
 这个项目实现了中文 [Late Chunking](https://jina.ai/news/late-chunking-in-long-context-embedding-models) 

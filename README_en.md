@@ -2,9 +2,9 @@
 ZH Late Chunking
 </h1>
 
-<p align="center">
-[English](README_en.md)
-</p>
+<div align="center">
+  <a href="README.md">Chinese</a> | <a href="README_en.md">English</a>
+</div>
 
 ### Introduction
 This project implements a wrapper for Chinese [Late Chunking](https://jina.ai/news/late-chunking-in-long-context-embedding-models). Users provide a list of text segments to be processed, for example:
