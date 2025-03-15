@@ -6,7 +6,7 @@ ZH Late Chunking
   <a href="README.md">Chinese</a> | <a href="README_en.md">English</a>
 </div>
 
-### 简介
+## 简介
 这个项目实现了中文 [Late Chunking](https://jina.ai/news/late-chunking-in-long-context-embedding-models) 
 的封装，用户传入一个包含多个待处理的文本段（text）的列表，类似：
 
@@ -32,11 +32,11 @@ embeddings = main(text)
 ```
 
 默认使用`Alibaba-NLP/gte-multilingual-base`模型。
-### 原理
-1. 除了最后一条text以外，在每条 text 末尾加入特殊字符 “\</s>” 进行隔断，然后记录隔断所在位置
+## 原理
+1. 除了最后一条text以外，在每条 text 末尾加入特殊字符 `</s>` 进行隔断，然后记录隔断所在位置
 2. 把 text 合并在一起进行 embedding
 3. 根据加入的隔断找回分割的 text，对每个分段内的 token embedding 求均值
 
-### 感谢
-[late-chunking-chinese项目](https://github.com/zhanshijinwat/late-chunking-chinese)
-[late-chuning项目](https://github.com/jina-ai/late-chunking)
+## 感谢
+- [late-chunking-chinese项目](https://github.com/zhanshijinwat/late-chunking-chinese)
+- [late-chuning项目](https://github.com/jina-ai/late-chunking)

@@ -6,7 +6,7 @@ ZH Late Chunking
   <a href="README.md">Chinese</a> | <a href="README_en.md">English</a>
 </div>
 
-### Introduction
+## Introduction
 This project implements a wrapper for Chinese [Late Chunking](https://jina.ai/news/late-chunking-in-long-context-embedding-models). Users provide a list of text segments to be processed, for example:
 
     texts = [
@@ -26,11 +26,11 @@ This function ultimately returns a numpy array produced by the late embedding pr
             
 By default, the model used is `Alibaba-NLP/gte-multilingual-base`.
 
-### How
+## How
 1. For every text except the last one, a special token `</s>` is appended at the end to serve as a delimiter, and the positions of these delimiters are recorded.
 2. The texts are then concatenated together for embedding.
 3. The inserted delimiters are used to recover the original text segmentation, and the token embeddings within each segment are averaged.
 
-### Acknowledgements
+## Acknowledgements
 - [late-chunking-chinese project](https://github.com/zhanshijinwat/late-chunking-chinese)
 - [late-chunking project](https://github.com/jina-ai/late-chunking)
