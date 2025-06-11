@@ -21,7 +21,8 @@ texts = [
 使用LateEmbedding的main函数：
 
 ```{python}
-embeddings = main(text)
+embedder = LateEmbedding()
+embeddings = embedder.main(texts)
 ```
 
 最终返回经过late embedding的numpy数组：
