@@ -17,7 +17,8 @@ This project implements a wrapper for Chinese [Late Chunking](https://jina.ai/ne
 
 Use the `main` function of `LateEmbedding` as follows:
 
-    embeddings = main(text)
+    embedder = LateEmbedding()
+    embeddings = embedder.main(texts)
 
 This function ultimately returns a numpy array produced by the late embedding process:
 
