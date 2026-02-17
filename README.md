@@ -34,7 +34,7 @@ embeddings = embedder.main(texts)
 
 默认使用`Alibaba-NLP/gte-multilingual-base`模型。
 ## 原理
-1. 除了最后一条text以外，在每条 text 末尾加入特殊字符 `</s>` 进行隔断，然后记录隔断所在位置
+1. 除了最后一条text以外，在每条 text 末尾加入特殊字符 `<<<SPLIT>>>` 进行隔断，然后记录隔断所在位置
 2. 把 text 合并在一起进行 embedding
 3. 根据加入的隔断找回分割的 text，对每个分段内的 token embedding 求均值
 

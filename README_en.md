@@ -28,7 +28,7 @@ This function ultimately returns a numpy array produced by the late embedding pr
 By default, the model used is `Alibaba-NLP/gte-multilingual-base`.
 
 ## How
-1. For every text except the last one, a special token `</s>` is appended at the end to serve as a delimiter, and the positions of these delimiters are recorded.
+1. For every text except the last one, a special token `<<<SPLIT>>>` is appended at the end to serve as a delimiter, and the positions of these delimiters are recorded.
 2. The texts are then concatenated together for embedding.
 3. The inserted delimiters are used to recover the original text segmentation, and the token embeddings within each segment are averaged.
 
